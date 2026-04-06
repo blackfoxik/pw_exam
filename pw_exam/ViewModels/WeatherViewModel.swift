@@ -25,6 +25,7 @@ final class WeatherViewModel {
     
     @MainActor
     func loadWeatherForecast(lat: Double, lon: Double, days: Int) async {
+        state = .loading
         do {
             async let current = self.service.fetchCurrenWeather(lat: lat, lon: lon)
             async let forecast = self.service.fetchWeatherForecast(lat: lat, lon: lon, days: days)
