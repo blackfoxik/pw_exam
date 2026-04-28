@@ -38,10 +38,10 @@ struct CurrentWeatherModel: Codable, Hashable {
     let uv: Double
     let gustMph: Double
     let gustKph: Double
-    let shortRad: Double
-    let diffRad: Double
-    let dni: Double
-    let gti: Double
+    //let shortRad: Double
+    //let diffRad: Double
+    //let dni: Double
+    //let gti: Double
 
     enum CodingKeys: String, CodingKey {
         case lastUpdatedEpoch = "last_updated_epoch"
@@ -72,8 +72,9 @@ struct CurrentWeatherModel: Codable, Hashable {
         case uv
         case gustMph = "gust_mph"
         case gustKph = "gust_kph"
-        case shortRad = "short_rad"
-        case diffRad = "diff_rad"
-        case dni, gti
+        //case shortRad = "short_rad"
+        //case diffRad = "diff_rad"
+        //case dni,
+        //case gti
     }
 }
